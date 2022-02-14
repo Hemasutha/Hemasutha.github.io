@@ -36,7 +36,7 @@
 <div class="container">
   <form action="/action_page.php">
     <label>First Name</label>
-    <input style="font-size:18px; color:darkblue;" type="text" name="firstname" placeholder="Your first name..">
+    <input type="text" name="firstname" placeholder="Your first name..">
 
     <label>Last Name</label>
     <input type="text" name="lastname" placeholder="Your last name..">
@@ -65,8 +65,11 @@
   background-color: #006BB2;
   padding: 20px;
 }
+  label{
+        color:black;
+    font-size:18px;
+  }
   input[type=text], select, textarea {
-    color:black;
   width: 100%;
   padding: 15px;
   border: 2px solid orange;
@@ -75,7 +78,6 @@
   margin-top: 8px;
   margin-bottom: 20px;
   resize: vertical;
-    font-size:18px;
 }
 
 input[type=submit] {
