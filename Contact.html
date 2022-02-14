@@ -30,17 +30,40 @@
 <div style="margin-top:-50px; height:500px;  background-repeat: no-repeat; background-size: cover; background-image: url('15.jpg')">  
 <h2> More Information </h2>
   <p> Looking for more education qualification related info dont hesitate to contact me.</p>
+  
+<div class="container">
+  <form action="/action_page.php">
+    <label>First Name</label>
+    <input type="text" name="firstname" placeholder="Your first name..">
 
+    <label>Last Name</label>
+    <input type="text" name="lastname" placeholder="Your last name..">
 
+    <label for="qualification">Country</label>
+    <select id="level" name="Qualification">
+      <option value="foundation">Foundation level</option>
+      <option value="diploma">Diploma Level</option>
+      <option value="degree">Degree</option>
+    </select>
 
+    <label>Email</label>
+    <input name="email" placeholder="Your email..">
 
-
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
   </div>
   
 
 
 <style>
+  
+  .container {
+  border-radius: 5px;
+  background-color: darkblue;
+  padding: 20px;
+}
   
   p{
   font-size:25px;
