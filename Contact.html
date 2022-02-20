@@ -26,14 +26,14 @@
 
 <br>
 <h8 style="color:white; font-family:Helvetica; font-size:30px; margin-bottom:40px;margin-left:20px;"> HEMA </h8>
-<ol><a class="move"  href="Contact.html">Contact</a></ol>
+<ol><a href="Contact.html">Contact</a></ol>
 <ol><a href="AboutMe.html">About Me</a></ol>
 <ol><a href="Qualification.html">Qualification</a></ol>
 <ol><a href="index.html">Home</a></ol>
 </div> 
   
 <!-- Background image --> 
-<div style="margin-top:-50px; height:580px; background-image: url('1.png')">  
+<div style="margin-top:-50px; height:620px; background-image: url('1.png')">  
  <br>
 <h2> Any question? </h2>
   <p> If you require any further information, feel free to enter your email address. We will contact you.</p>
@@ -45,19 +45,27 @@
 
     <label>Last Name</label>
     <input type="text" name="lastname" placeholder="Your last name..">
-    
+
+    <label for="qualification">Qualification Level</label>
+    <select id="level" name="Qualification" required>
+      <option value="foundation">Foundation level</option>
+      <option value="diploma">Diploma Level</option>
+      <option value="degree">Degree</option>
+    </select>
+
+    <label>Email</label>
+    <input type="textarea" name="email" placeholder="Your email.." required>
+
     <input type="submit" value="Submit">
   </form>
-</div>  
+</div>
+  <center><h3> Thank you.</h3></center>
+  
   </div>
   
 
 
 <style>
-  
-    .move{
-    margin-right:10px;
-  }
   
   .container {
   border-radius: 5px;
