@@ -21,67 +21,101 @@
 </head>
   
 
-<div style="background-color:black; height:100px;">
+<div style="background-color:black; height:130px;">
 <body bgcolor="white" text="blue">
 
 <br>
 <h8 style="color:white; font-family:Helvetica; font-size:30px; margin-bottom:40px;margin-left:20px;"> HEMA </h8>
-<ol><a class="move"  href="Contact.html">Contact</a></ol>
+<ol><a href="Contact.html">Contact</a></ol>
 <ol><a href="AboutMe.html">About Me</a></ol>
 <ol><a href="Qualification.html">Qualification</a></ol>
 <ol><a href="index.html">Home</a></ol>
 </div> 
   
 <!-- Background image --> 
-<div style="margin-top:-20px; background-image: url('1.png')">
-  <br>
+<div style="margin-top:-50px; height:620px; background-image: url('1.png')">  
+ <br>
+<h2> Any question? </h2>
+  <p> If you require any further information, feel free to enter your email address. We will contact you.</p>
   
-<center><h2 style="color:cyan;font-size:23px;"> Little About My Course...</h2></center>
-  <center><img style="width:240px; height:220px;" src="Q5.jpg" alt="Computer girl"></center>
+<div class="container">
+  <form action="Accept.html">
+    <label>First Name</label>
+    <input type="text" name="firstname" placeholder="Your first name.." required>
 
-<center>  <p style="font-size: 16px;">Hi. I'am Hema! Currently, I am pursuing a Bachelor's Degree <br> in Multimedia Computing (Hons). 
-  As a student studying this course,<br> the learning experience seems to be wonderful and appreciated based<br> on the learning process until now.
-  I expect that this Degree educational <br> experience to be equivalent to what I can apply in the future project.Not<br> only that, I have learned 
-  several important factors which apply in this course<br> which is good in tackling the problems, creative minded, good in team<br> works and many more. 
-  Moreover, based on the course there are<br> several job prospects given such as website developers, <br>
-  system analysts, IT  project systems, <br> database administrator.
-<br></br>
-  <br></br>
+    <label>Last Name</label>
+    <input type="text" name="lastname" placeholder="Your last name..">
 
-<hr>
+    <label for="qualification">Qualification Level</label>
+    <select id="level" name="Qualification" required>
+      <option value="foundation">Foundation level</option>
+      <option value="diploma">Diploma Level</option>
+      <option value="degree">Degree</option>
+    </select>
+
+    <label>Email</label>
+    <input type="textarea" name="email" placeholder="Your email.." required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  <center><h3> Thank you.</h3></center>
+  
   </div>
+  
+
 
 <style>
-    .move{
-    margin-right:10px;
+  
+  .container {
+  border-radius: 5px;
+  background-color: #0052B2;
+  padding: 20px;
+}
+  label{
+        color:black;
+    font-size:18px;
   }
-  button{
-    font-size:19px;
-    color:white;
-    float:right;
-    background-color:#C68A00;
-    margin-top:-400px;
-    font-decoration:italic;
-  }
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+}
+
   p{
-  font-size:15px;
+  font-size:18px;
   font-family:Helvetica;
   color:white;
-      text-align: justify;
-    text-align: center;
 }
   
    h2{
-    font-size:22px; 
+    font-size:30px; 
     font-family:Helvetica;
     color:white;
     text-decoration:bold;
   }
   
   h3{
-    font-size:15px;
+    font-size:40px;
     font-family:Helvetica;
-    color:white;
+    color:orange;
     text-decoration:bold;
   }
   
@@ -107,3 +141,4 @@
   
   </body>
 </head>
+
